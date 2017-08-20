@@ -1,0 +1,15 @@
+{
+  "name": "jsxstyle-demo",
+  "version": "2.0.0-beta.3",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --hot",
+    "build_react": "rimraf build/react; webpack --config src/react/webpack.config.js",
+    "build_preact": "rimraf build/preact; webpack --config src/preact/webpack.config.js"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.1",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
